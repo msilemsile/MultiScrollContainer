@@ -7,13 +7,11 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.memebox.cn.android.base.ui.view.FixedViewPager;
-
 /**
  * viewPager嵌套滑动
  */
 
-public class MultiViewPagerImpl extends FixedViewPager implements IMultiScrollHandler {
+public class MultiViewPagerImpl extends ViewPager implements IMultiScrollHandler {
 
     private View mInnerScrollView;
     private int mInnerScrollResId;
